@@ -2,6 +2,7 @@ import { lazy } from "react";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const HeaderMenu = lazy(() => import('@ui/components/HeaderMenu'));
+const Home = lazy(() => import('@ui/pages/Home'));
 
 const router = createBrowserRouter([
   {
@@ -11,7 +12,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <>Oi mãe</>
+        element: <Home />
       }
     ]
   }
