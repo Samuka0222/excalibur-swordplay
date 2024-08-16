@@ -126,7 +126,7 @@ export default function Home() {
         </AnimatedContainer>
 
         <AnimatedContainer
-          initial={{ y: 700 }}
+          initial={{ y: 200 }}
           animate={{ y: 0 }}
           transition={{ duration: 1, ease: 'easeInOut' }}
           className="w-full md:w-[85%] lg:w-[75%] xl:w-[70%] xl:mt-24 xl:flex xl:flex-col justify-center items-center gap-4"

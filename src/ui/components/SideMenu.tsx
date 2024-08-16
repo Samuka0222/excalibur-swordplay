@@ -2,6 +2,7 @@ import { Sheet, SheetTrigger, SheetContent, SheetHeader, SheetTitle } from "./Sh
 import { Calendar, Home, MenuIcon, Phone, Scroll } from "lucide-react"
 import { Link } from "react-router-dom"
 import { Button } from "./Button"
+import { routes } from "@app/lib/route";
 
 interface SideMenuButtonProps {
   to: string;
@@ -34,22 +35,22 @@ export function SideMenu() {
         </SheetHeader>
         <ul className="w-full flex flex-col gap-4 justify-between items-center p-4">
           <li className="w-full">
-            <SideMenuLinkButton to="/">
+            <SideMenuLinkButton to={routes.home}>
               <Home className="mr-2" /> Início
             </SideMenuLinkButton>
           </li>
           <li className="w-full">
-            <SideMenuLinkButton to="/">
+            <SideMenuLinkButton to={routes.rules}>
               <Scroll className="mr-2" /> Regras
             </SideMenuLinkButton>
           </li>
           <li className="w-full">
-            <SideMenuLinkButton to="/">
+            <SideMenuLinkButton to={routes.events}>
               <Calendar className="mr-2" /> Eventos
             </SideMenuLinkButton>
           </li>
           <li className="w-full">
-            <SideMenuLinkButton to="/">
+            <SideMenuLinkButton to={routes.contact}>
               <Phone className="mr-2" /> Contato
             </SideMenuLinkButton>
           </li>
