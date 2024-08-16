@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export function Banner() {
   return (
-    <div className="w-full h-full bg-primary relative font-medieval">
+    <div className="w-full h-full bg-primary py-6 relative font-medieval">
       <motion.div
         className='absolute w-full h-full top-0 left-0 bg-primary'
         initial={{
@@ -14,7 +14,7 @@ export function Banner() {
         transition={{ duration: 1, ease: 'easeInOut' }}
       />
 
-      <div className="w-full flex gap-2 justify-center items-center">
+      <div className="w-full flex gap-2 justify-center items-center mt-6">
         <span className="text-2xl lg:text-3xl font-bold text-white">Excalibur</span>
         <img src="/img/logo-excalibur-swordplay-md.png" alt="Logo do Excalibur Swordplay" className="w-32 h-32 lg:w-40 lg:h-40" />
         <span className="text-2xl lg:text-3xl font-bold text-white">Swordplay</span>

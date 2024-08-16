@@ -12,7 +12,7 @@ export default function HeaderMenu() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ ease: "easeInOut" }}
-        className="w-full bg-primary flex justify-between md:justify-around items-center py-5 px-8 xl:px-24"
+        className="w-full bg-primary fixed top-0 left-0 z-10 shadow-sm shadow-white flex justify-between md:justify-around items-center py-5 px-8 xl:px-24"
       >
         {/* Mobile Menu */}
         <div className="block lg:hidden w-fit ">
