@@ -1,7 +1,9 @@
+import { Banner } from "@ui/components/Banner";
+
 export default function Home() {
   return (
-    <section className="w-full h-full bg-secondary">
-      <h1>Home</h1>
+    <section className="w-full h-full mt-8">
+      <Banner />
     </section>
   )
 }

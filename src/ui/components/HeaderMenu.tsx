@@ -58,23 +58,3 @@ export default function HeaderMenu() {
     </>
   )
 }
-
-{/* <nav className="w-[70%]">
-  <ul className="flex justify-between items-center p-4">
-    <li>
-      <AnimatedLink to="/">
-        Regras
-      </AnimatedLink>
-    </li>
-    <li>
-      <AnimatedLink to="/">
-        Eventos
-      </AnimatedLink>
-    </li>
-    <li>
-      <AnimatedLink to="/">
-        Contato
-      </AnimatedLink>
-    </li>
-  </ul>
-</nav> */}
