@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export function Banner() {
   return (
-    <div className="w-full h-full bg-primary relative">
+    <div className="w-full h-full bg-primary relative font-medieval">
       <motion.div
         className='absolute w-full h-full top-0 left-0 bg-primary'
         initial={{
