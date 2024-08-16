@@ -204,7 +204,7 @@ export default function Home() {
             }}
             className="mt-6"
           >
-            <Link to="/eventos" className="text-white bg-primary font-medium text-lg w-[200px] rounded-lg py-2 transition-colors hover:text-primary hover:bg-secondary flex justify-center items-center">
+            <Link to="/eventos" className="text-white bg-primary font-medium text-lg w-[200px] rounded-lg py-2 transition-colors hover:text-primary hover:bg-secondary flex justify-center items-center mb-16">
               Ver Eventos
             </Link>
           </motion.div>

@@ -1,3 +1,4 @@
+import { Footer } from "@ui/components/Footer";
 import { lazy } from "react";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -22,6 +23,7 @@ export function Router() {
   return (
     <main className="min-h-screen min-w-full bg-primary">
       <RouterProvider router={router} />
+      <Footer />
     </main>
   )
 }

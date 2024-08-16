@@ -15,7 +15,10 @@ export function AnimatedLink({ to, children }: AnimatedLinkProps) {
         borderBottom: "2px solid"
       }}
     >
-      <Link to={to} className="text-white font-medium text-lg w-full py-2 transition-colors hover:text-gray-400 flex justify-center items-center">
+      <Link
+        to={to}
+        className="text-white font-medium text-lg w-full py-2 transition-colors hover:text-gray-400 flex justify-center items-center"
+      >
         {children}
       </Link>
     </motion.div>
