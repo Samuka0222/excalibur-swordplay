@@ -7,6 +7,7 @@ import { HeaderMenu } from "@ui/components/HeaderMenu";
 
 const Home = lazy(() => import('@ui/pages/Home'));
 const Events = lazy(() => import('@ui/pages/Events'));
+const Rules = lazy(() => import('@ui/pages/Rules'));
 
 // TODO: Handle errors
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: routes.events,
         element: <Events />
+      },
+      {
+        path: routes.rules,
+        element: <Rules />
       }
     ]
   }
