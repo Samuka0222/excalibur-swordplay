@@ -10,7 +10,7 @@ export function NextEventCard() {
       </CardHeader>
       <CardContent className="w-full flex-col justify-center items-center">
         <div className="w-full flex gap-8 justify-center items-center">
-          <img src="/img/logo-excalibur-swordplay-md.png" alt="logo do Excalibur Swordplay" className="w-32 h-32" />
+          <img src="/images/logo-excalibur-swordplay-md.png" alt="logo do Excalibur Swordplay" className="w-32 h-32" />
           <div className="w-32 h-32 border border-white text-center">
             Logo da Comic-Sul 2024
           </div>
@@ -31,7 +31,7 @@ export function NextEventCard() {
           <a href="/eventos" className="text-primary bg-secondary font-medium text-base w-full rounded-lg p-3 transition-colors hover:text-primary hover:bg-secondary flex justify-center items-center">
             Entre no nosso grupo
             <img
-              src="/img/whatsapp.svg"
+              src="/images/whatsapp.svg"
               alt="botão para grupo do whatsapp"
               className="w-6 h-6 ml-2"
             />

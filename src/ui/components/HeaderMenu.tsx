@@ -16,7 +16,7 @@ export function HeaderMenu() {
       >
         {/* Mobile Menu */}
         <div className="block lg:hidden w-fit ">
-          <img src="/img/logo-excalibur-swordplay-sm.png" alt="Logo do Excalibur Swordplay" />
+          <img src="/images/logo-excalibur-swordplay-sm.png" alt="Logo do Excalibur Swordplay" />
         </div>
         <div className="block md:hidden">
           <SideMenu />
@@ -25,7 +25,7 @@ export function HeaderMenu() {
         {/* Desktop Menu */}
         <div className="hidden lg:flex w-fit justify-center items-center hover:scale-105 transition-transform">
           <span className="text-xl font-bold text-white">Excalibur</span>
-          <img src="/img/logo-excalibur-swordplay-md.png" alt="Logo do Excalibur Swordplay" className="hidden lg:block w-32 h-32" />
+          <img src="/images/logo-excalibur-swordplay-md.png" alt="Logo do Excalibur Swordplay" className="hidden lg:block w-32 h-32" />
           <span className="text-xl font-bold text-white">Swordplay</span>
         </div>
         <nav className="hidden md:block w-[60%]">

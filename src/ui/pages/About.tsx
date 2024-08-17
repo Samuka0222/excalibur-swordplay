@@ -31,7 +31,7 @@ export default function About() {
           </p>
           <div className="w-full flex justify-center items-center">
             <div className="bg-primary w-fit p-3 rounded-lg">
-              <img src="/img/logo-excalibur-swordplay-md.png" alt="Logo do Excalibur Swordplay" className="w-44 h-44 lg:w-56 lg:h-56" />
+              <img src="/images/logo-excalibur-swordplay-md.png" alt="Logo do Excalibur Swordplay" className="w-44 h-44 lg:w-56 lg:h-56" />
             </div>
           </div>
         </div>

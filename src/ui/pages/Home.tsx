@@ -37,7 +37,7 @@ export default function Home() {
           <CardContainer className="mb-16">
             <CardBody className="flex flex-col justify-center items-center">
               <img
-                src="/img/swordplay-fotos-3.jpg"
+                src="https://utfs.io/f/3b4ed472-4e67-47e3-a753-6df1183d8ca5-jgbhhj.jpg"
                 alt="Foto do Swordplay realizado na Comic-Sul 2023"
                 className="w-[350px] xl:w-[300px]"
               />
@@ -122,7 +122,7 @@ export default function Home() {
           <CardContainer className="mb-16 xl:mb-0">
             <CardBody className="flex flex-col justify-center items-center">
               <img
-                src="/img/swordplay-fotos-2.jpg"
+                src="https://utfs.io/f/962e3484-6f26-4d76-9373-7651942660f7-jgbhhk.jpg"
                 alt="Foto do Swordplay realizado na Comic-Sul 2023"
                 className="w-[350px] xl:w-[300px]"
               />
@@ -149,7 +149,7 @@ export default function Home() {
           <CardContainer className="mb-16">
             <CardBody className="flex flex-col justify-center items-center">
               <img
-                src="/img/swordplay-fotos-5.jpg"
+                src="https://utfs.io/f/b79d5010-430d-4604-ad75-1bf2bfd3a6eb-jgbhhh.jpg"
                 alt="Crianças jogam Swordplay no evento realizado na Comic-Sul 2023"
                 className="w-[350px] xl:w-[300px]"
               />

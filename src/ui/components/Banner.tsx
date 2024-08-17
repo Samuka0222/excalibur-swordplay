@@ -16,7 +16,7 @@ export function Banner() {
 
       <div className="w-full flex gap-2 justify-center items-center mt-6">
         <span className="text-2xl lg:text-3xl font-bold text-white">Excalibur</span>
-        <img src="/img/logo-excalibur-swordplay-md.png" alt="Logo do Excalibur Swordplay" className="w-32 h-32 lg:w-40 lg:h-40" />
+        <img src="/images/logo-excalibur-swordplay-md.png" alt="Logo do Excalibur Swordplay" className="w-32 h-32 lg:w-40 lg:h-40" />
         <span className="text-2xl lg:text-3xl font-bold text-white">Swordplay</span>
       </div>
       <div className='w-full flex gap-1 text-white justify-center items-center px-5'>
