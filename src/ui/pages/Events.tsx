@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 
 export default function Events() {
+  // TODO: Add to a Mock file
   const swordplay2023Photos = [
     {
       src: '/img/swordplay-fotos-1.jpg',
@@ -26,6 +27,8 @@ export default function Events() {
     },
   ]
 
+  // TODO: Add Animations
+  // TODO: Ensure that the scroll in on top of the screen when enter this page through link button on Home Page
   return (
     <section className="w-full h-full flex flex-col justify-center items-center bg-white mt-[140px] lg:mt-[200px] px-5 py-6">
       <h1 className="font-medieval font-bold text-2xl text-center">
@@ -46,7 +49,7 @@ export default function Events() {
             </div>
             <div className="w-full flex flex-col justify-center items-center text-center font-semibold text-xl mt-6 gap-2">
               <h3>23 de Novembro de 2024</h3>
-              <h4 className="text-lg flex gap-2 items-center"><MapPin /> No Shopping Santa Cruz</h4>
+              <h4 className="text-lg flex gap-2 items-center"><MapPin /> Shopping Santa Cruz</h4>
             </div>
           </CardContent>
           <CardFooter className="text-center flex flex-col justify-center items-center">

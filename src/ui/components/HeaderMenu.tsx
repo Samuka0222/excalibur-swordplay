@@ -5,7 +5,7 @@ import { AnimatedLink } from "./AnimatedLink";
 import { Calendar, Phone, Scroll, Home } from "lucide-react";
 import { routes } from "@app/lib/route";
 
-export default function HeaderMenu() {
+export function HeaderMenu() {
   return (
     <>
       <motion.header

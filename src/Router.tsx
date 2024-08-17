@@ -3,10 +3,12 @@ import { Loader2 } from "lucide-react";
 import { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { routes } from "@app/lib/route";
+import { HeaderMenu } from "@ui/components/HeaderMenu";
 
-const HeaderMenu = lazy(() => import('@ui/components/HeaderMenu'));
 const Home = lazy(() => import('@ui/pages/Home'));
 const Events = lazy(() => import('@ui/pages/Events'));
+
+// TODO: Handle errors
 
 const router = createBrowserRouter([
   {
