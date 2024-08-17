@@ -1,8 +1,13 @@
 import { AnimatedContainer } from "@ui/components/AnimatedContainer";
 import { Instagram, Swords } from "lucide-react";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 export default function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   return (
     <section className="w-full h-full flex flex-col justify-center items-center bg-white mt-[140px] lg:mt-[200px] px-5 py-6">
       <h1 className="font-medieval font-bold text-2xl text-center">

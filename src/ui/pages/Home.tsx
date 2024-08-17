@@ -5,8 +5,13 @@ import { Banner } from "@ui/components/Banner";
 import { BicepsFlexed, Calendar, Scroll, ShieldBanIcon, Sword, Swords, User } from "lucide-react";
 import { Link } from "react-router-dom";
 import { NextEventCard } from "@ui/components/NextEventCard";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   return (
     <div className="w-full h-full mt-[110px] xl:mt-[150px]">
       <Banner />
