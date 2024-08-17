@@ -4,12 +4,13 @@ import { motion } from "framer-motion"
 import { Banner } from "@ui/components/Banner";
 import { BicepsFlexed, Calendar, Scroll, ShieldBanIcon, Sword, Swords, User } from "lucide-react";
 import { Link } from "react-router-dom";
+import { NextEventCard } from "@ui/components/NextEventCard";
 
 export default function Home() {
   return (
     <div className="w-full h-full mt-[110px] xl:mt-[150px]">
       <Banner />
-      <section className="w-full h-full flex flex-col justify-center items-center mt-12 bg-white py-5 px-3 rounded-lg">
+      <section className="w-full h-full flex flex-col justify-center items-center mt-12 bg-white py-5 px-3">
         <AnimatedContainer
           initial={{ y: 700 }}
           animate={{ y: 0 }}
@@ -193,7 +194,13 @@ export default function Home() {
               Quando será o próximo evento?
             </h2>
             <p className="text-lg indent-6 text-justify">
-              <span className="text-3xl font-medieval font-medium">O</span> próximo evento do <span className="font-bold text-medieval">Excalibur Swordplay</span> será na Comic-Sul 2024 no dia 23 de Novembro de 2024, no Shopping Santa Cruz, verifique a página de Eventos para saber mais!
+              <span className="text-3xl font-medieval font-medium">O</span> próximo evento do <span className="font-bold text-medieval">Excalibur Swordplay</span> será na Comic-Sul 2024 no dia 23 de Novembro de 2024, no Shopping Santa Cruz.
+            </p>
+            <div className="w-full flex justify-center items-center">
+              <NextEventCard />
+            </div>
+            <p className="text-lg indent-6 text-justify">
+              <span className="text-3xl font-medieval font-medium">P</span>ara mais informações ou deseja visualizar eventos anteriores, verifique a página de Eventos para mais!
             </p>
           </div>
 
