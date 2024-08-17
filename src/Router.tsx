@@ -42,7 +42,7 @@ export function Router() {
   return (
     <main className="min-h-screen min-w-full bg-primary">
       <Suspense fallback={
-        <div className="w-full h-full flex justify-center items-center">
+        <div className="min-h-screen min-w-full bg-white flex justify-center items-center">
           <Loader2 className="animate-spin" />
         </div>
       }>

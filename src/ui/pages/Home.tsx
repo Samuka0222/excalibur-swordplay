@@ -13,14 +13,14 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="w-full h-full mt-[110px] xl:mt-[150px]">
+    <section className="w-full h-full mt-[110px] xl:mt-[150px] bg-white flex flex-col justify-center items-center">
       <Banner />
-      <section className="w-full h-full flex flex-col justify-center items-center mt-12 bg-white py-5 px-3">
+      <div className="w-full md:w-[85%] lg:w-[75%] xl:w-[70%] h-full flex flex-col justify-center items-center mt-8 py-5 px-3">
         <AnimatedContainer
           initial={{ y: 700 }}
           animate={{ y: 0 }}
           transition={{ duration: 1, ease: 'easeInOut' }}
-          className="w-full md:w-[85%] lg:w-[75%] xl:w-[70%] mt-10 xl:flex justify-center gap-24"
+          className="w-full xl:flex justify-center gap-24"
         >
           <div className="w-full xl:w-[50%] flex flex-col gap-5">
             <h2 className="w-full text-2xl font-medieval font-bold flex">
@@ -34,7 +34,7 @@ export default function Home() {
               <span className="text-3xl font-medieval font-medium">I</span>magine um campo aberto, onde o som de espadas se chocando ecoa pelo ar. Adrenalina e estratégia se misturam enquanto você enfrenta seus oponentes em duelos emocionantes ou batalhas campais em grupo. Essa é a essência do Swordplay, uma simulação de combate medieval que te leva para o coração da Idade Média.
             </p>
           </div>
-          <CardContainer className="mb-16">
+          <CardContainer className="mb-8">
             <CardBody className="flex flex-col justify-center items-center">
               <img
                 src="https://utfs.io/f/3b4ed472-4e67-47e3-a753-6df1183d8ca5-jgbhhj.jpg"
@@ -50,7 +50,7 @@ export default function Home() {
           initial={{ y: 200 }}
           animate={{ y: 0 }}
           transition={{ duration: 1, ease: 'easeInOut' }}
-          className="w-full md:w-[85%] lg:w-[75%] xl:w-[70%] xl:flex justify-center gap-24"
+          className="w-full xl:flex justify-center gap-24"
         >
           <div className="w-full xl:w-[80%] flex flex-col gap-5">
             <h2 className="w-full text-2xl font-medieval font-bold flex">
@@ -67,7 +67,7 @@ export default function Home() {
           initial={{ y: 700 }}
           animate={{ y: 0 }}
           transition={{ duration: 1, ease: 'easeInOut' }}
-          className="w-full md:w-[85%] lg:w-[75%] xl:w-[70%] mt-24 xl:flex xl:justify-center xl:items-center gap-24"
+          className="w-full mt-16 xl:flex xl:justify-center xl:items-center gap-24"
         >
           <div className="w-full xl:w-[50%] flex flex-col gap-5">
             <h2 className="w-full text-2xl font-medieval font-bold flex">
@@ -135,7 +135,7 @@ export default function Home() {
           initial={{ y: 200 }}
           animate={{ y: 0 }}
           transition={{ duration: 1, ease: 'easeInOut' }}
-          className="w-full md:w-[85%] lg:w-[75%] xl:w-[70%] xl:mt-24 xl:flex xl:flex-col justify-center items-center gap-4"
+          className="w-full xl:mt-16 xl:flex xl:flex-col justify-center items-center gap-4"
         >
           <div className="w-full xl:w-[80%] flex flex-col gap-5">
             <h2 className="w-full text-2xl font-medieval font-bold flex">
@@ -162,7 +162,7 @@ export default function Home() {
           initial={{ y: 200 }}
           animate={{ y: 0 }}
           transition={{ duration: 1, ease: 'easeInOut' }}
-          className="w-full md:w-[85%] lg:w-[75%] xl:w-[70%] flex flex-col justify-center items-center"
+          className="w-full flex flex-col justify-center items-center"
         >
           <div className="w-full xl:w-[80%] flex flex-col gap-5">
             <h2 className="w-full text-2xl font-medieval font-bold flex">
@@ -191,7 +191,7 @@ export default function Home() {
           initial={{ y: 200 }}
           animate={{ y: 0 }}
           transition={{ duration: 1, ease: 'easeInOut' }}
-          className="w-full md:w-[85%] lg:w-[75%] xl:w-[70%] flex flex-col justify-center items-center mt-24"
+          className="w-full flex flex-col justify-center items-center mt-16"
         >
           <div className="w-full xl:w-[80%] flex flex-col gap-5">
             <h2 className="w-full text-2xl font-medieval font-bold flex">
@@ -222,7 +222,7 @@ export default function Home() {
           </motion.div>
         </AnimatedContainer>
 
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
