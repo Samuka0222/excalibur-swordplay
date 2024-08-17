@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { Outlet } from "react-router-dom";
 import { SideMenu } from "./SideMenu";
 import { AnimatedLink } from "./AnimatedLink";
-import { Calendar, Phone, Scroll, Home } from "lucide-react";
-import { routes } from "@app/lib/route";
+import { Calendar, Scroll, Home, BookUser } from "lucide-react";
+import { routes } from "@app/routes/route";
 
 export function HeaderMenu() {
   return (
@@ -46,8 +46,8 @@ export function HeaderMenu() {
               </AnimatedLink>
             </li>
             <li>
-              <AnimatedLink to={routes.contact}>
-                <Phone className="mr-2" /> Contato
+              <AnimatedLink to={routes.about}>
+                <BookUser className="mr-2" /> Sobre
               </AnimatedLink>
             </li>
           </ul>
