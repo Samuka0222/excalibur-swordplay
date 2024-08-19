@@ -1,22 +1,29 @@
 import { Footer } from "@ui/components/Footer";
-import { Loader2 } from "lucide-react";
+import { Loader2 as LoaderIcon } from "lucide-react";
 import { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { routes } from "@app/routes/route";
 import { HeaderMenu } from "@ui/components/HeaderMenu";
+import { Error } from "@ui/pages/Error";
 
 const Home = lazy(() => import('@ui/pages/Home'));
 const Events = lazy(() => import('@ui/pages/Events'));
 const Rules = lazy(() => import('@ui/pages/Rules'));
 const About = lazy(() => import('@ui/pages/About'));
 
-// TODO: Handle errors
+const Loader = () => {
+  return (
+    <div className="min-h-screen min-w-full bg-white flex justify-center items-center">
+      <LoaderIcon className="animate-spin" />
+    </div>
+  )
+}
 
 const router = createBrowserRouter([
   {
     path: routes.home,
     element: <HeaderMenu />,
-    errorElement: <h1> Error </h1>,
+    errorElement: <Error />,
     children: [
       {
         path: routes.home,
@@ -40,12 +47,8 @@ const router = createBrowserRouter([
 
 export function Router() {
   return (
-    <main className="min-h-screen min-w-full bg-primary">
-      <Suspense fallback={
-        <div className="min-h-screen min-w-full bg-white flex justify-center items-center">
-          <Loader2 className="animate-spin" />
-        </div>
-      }>
+    <main className="min-h-screen min-w-full bg-primary overflow-y-auto">
+      <Suspense fallback={<Loader />}>
         <RouterProvider router={router} />
       </Suspense>
       <Footer />

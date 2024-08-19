@@ -1,5 +1,6 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@ui/components/Card";
 import { motion } from "framer-motion";
+import { LazyImage } from "./LazyImage";
 
 interface RulesCardProps {
   title: React.ReactNode;
@@ -20,14 +21,14 @@ export function RuleCard({
       animate={{ scale: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeInOut" }}
     >
-      <Card className="w-full md:w-[90%] lg:w-[700px] mt-4 hover:scale-105 transition-transform ease-in-out">
+      <Card className="w-full md:w-[90%] lg:w-[500px] mt-4 hover:scale-105 transition-transform ease-in-out">
         <CardHeader className="bg-primary text-white rounded-t-lg py-2">
           <CardTitle>
             {title}
           </CardTitle>
         </CardHeader>
         <CardContent className="w-full flex-col justify-center items-center p-0">
-          <img
+          <LazyImage
             src={imgSrc}
             className="bg-cover h-full"
             alt={imgAlt}

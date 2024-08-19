@@ -33,6 +33,7 @@ export default function Events() {
               swordplay2023Photos.map((photo, index) => (
                 <li key={index} className="mt-10">
                   <img
+                    loading="lazy"
                     src={photo.src}
                     alt={photo.alt}
                     className="w-[350px] xl:w-[400px] object-cover rounded-lg shadow-md hover:scale-110 transition-transform"
