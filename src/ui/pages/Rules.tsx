@@ -9,7 +9,7 @@ export default function Rules() {
 
   return (
     <section className="w-full h-full bg-white mt-[110px] lg:mt-[150px] px-5 py-6">
-      <h1 className="font-medieval font-bold text-2xl text-center mt-10">
+      <h1 className="font-medieval font-bold text-2xl text-center mt-4 lg:mt-8">
         <span className="text-4xl">R</span>egras do Swordplay
       </h1>
       <div className="w-full mt-5 flex flex-col xl:flex-row xl:flex-wrap gap-8 justify-center items-center mb-24">

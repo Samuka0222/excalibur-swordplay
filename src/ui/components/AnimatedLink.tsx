@@ -1,26 +1,42 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom"
+import { Link, NavLink, useMatch } from "react-router-dom"
 
 interface AnimatedLinkProps {
   to: string;
   children: React.ReactNode;
+  navLink?: boolean
 }
 
-export function AnimatedLink({ to, children }: AnimatedLinkProps) {
+export function AnimatedLink({ to, children, navLink }: AnimatedLinkProps) {
+  const match = useMatch(to);
+
   return (
     <motion.div
       whileHover={{
         scale: 1.1,
         color: "#9ca3af",
-        borderBottom: "2px solid"
+        borderBottom: match?.pathname !== to ? "2px solid" : undefined
       }}
     >
-      <Link
-        to={to}
-        className="text-white font-medium text-lg w-full py-2 transition-colors hover:text-gray-400 flex justify-center items-center"
-      >
-        {children}
-      </Link>
+      {
+        navLink
+          ? <NavLink
+            to={to}
+            className={({ isActive }) =>
+              isActive
+                ? "text-primary bg-white font-medium text-lg w-full py-2 px-3 transition-colors hover:text-gray-800 flex justify-center items-center rounded-lg"
+                : "text-white font-medium text-lg w-full py-2 px-3 transition-colors hover:text-gray-400 flex justify-center items-center"
+            }
+          >
+            {children}
+          </NavLink>
+          : <Link
+            to={to}
+            className="text-white font-medium text-lg w-full py-2 transition-colors hover:text-gray-400 flex justify-center items-center"
+          >
+            {children}
+          </Link>
+      }
     </motion.div>
   )
 }

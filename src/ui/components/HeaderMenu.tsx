@@ -31,22 +31,22 @@ export function HeaderMenu() {
         <nav className="hidden md:block w-[60%]">
           <ul className="flex justify-center items-center md:gap-10 lg:gap-10 xl:gap-28 p-4 text-lg">
             <li>
-              <AnimatedLink to={routes.home}>
+              <AnimatedLink to={routes.home} navLink>
                 <Home className="mr-2" /> Início
               </AnimatedLink>
             </li>
             <li>
-              <AnimatedLink to={routes.rules}>
+              <AnimatedLink to={routes.rules} navLink>
                 <Scroll className="mr-2" /> Regras
               </AnimatedLink>
             </li>
             <li>
-              <AnimatedLink to={routes.events}>
+              <AnimatedLink to={routes.events} navLink>
                 <Calendar className="mr-2" /> Eventos
               </AnimatedLink>
             </li>
             <li>
-              <AnimatedLink to={routes.about}>
+              <AnimatedLink to={routes.about} navLink>
                 <BookUser className="mr-2" /> Sobre
               </AnimatedLink>
             </li>

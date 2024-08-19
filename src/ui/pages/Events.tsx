@@ -4,20 +4,19 @@ import { AnimatedContainer } from "@ui/components/AnimatedContainer"
 import { useEffect } from "react";
 
 export default function Events() {
-  // TODO: Ensure that the scroll in on top of the screen when enter this page through link button on Home Page
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [])
 
   return (
-    <section className="w-full h-full flex flex-col justify-center items-center bg-white mt-[140px] lg:mt-[200px] px-5 py-6">
+    <section className="w-full h-full flex flex-col justify-center items-center bg-white mt-[110px] lg:mt-[160px] px-5 py-6">
       <AnimatedContainer
         initial={{ y: 700 }}
         animate={{ y: 0 }}
         transition={{ duration: 1, ease: 'easeInOut' }}
         className="w-full md:w-[85%] lg:w-[75%] xl:w-[70%] flex flex-col justify-center"
       >
-        <h1 className="font-medieval font-bold text-2xl text-center">
+        <h1 className="font-medieval font-bold text-2xl text-center mt-4 lg:mt-8">
           <span className="text-4xl">E</span>ventos de Swordplay
         </h1>
         <div className="w-full mt-10 flex flex-col justify-center items-center">

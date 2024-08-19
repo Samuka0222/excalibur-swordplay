@@ -9,8 +9,8 @@ export default function About() {
   }, [])
 
   return (
-    <section className="w-full h-full flex flex-col justify-center items-center bg-white mt-[140px] lg:mt-[200px] px-5 py-6">
-      <h1 className="font-medieval font-bold text-2xl text-center">
+    <section className="w-full h-full flex flex-col justify-center items-center bg-white mt-[110px] lg:mt-[160px] px-5 py-6">
+      <h1 className="font-medieval font-bold text-2xl text-center mt-4 lg:mt-8">
         <span className="text-4xl">S</span>obre o Excalibur Swordplay
       </h1>
 
