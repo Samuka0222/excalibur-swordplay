@@ -12,7 +12,7 @@ export function Footer() {
       <div className="font-medium flex justify-center items-center gap-2">
         <span className="hidden md:block text-lg">Nos siga:</span>
         <motion.a
-          href="https://www.instagram.com/carloskroetz/"
+          href="https://www.instagram.com/excalibur.swordplay/"
           target="_blank"
           whileHover={{
             scale: 1.1,

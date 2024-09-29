@@ -190,7 +190,9 @@ export default function Home() {
                   </CardBody>
                 </CardContainer>
               </div>
-              <span className="text-center mt-1 text-medium text-sm text-gray-500">Swordplay na Comic-Sul 2023</span>
+              <span className="text-center text-medium text-sm mt-3 text-gray-500">
+                Swordplay na Comic-Sul 2023
+              </span>
             </div>
           </HeroSection>
         </AnimatedContainer>
@@ -353,7 +355,11 @@ export default function Home() {
                   }}
                   className="mt-4"
                 >
-                  <a href="/eventos" className="text-primary bg-secondary font-medium text-base w-full rounded-lg p-3 transition-colors hover:text-primary hover:bg-secondary flex justify-center items-center">
+                  <a
+                    href="https://wa.me/+555198660606"
+                    target="_blank"
+                    className="text-primary bg-secondary font-medium text-base w-full rounded-lg p-3 transition-colors hover:text-primary hover:bg-secondary flex justify-center items-center"
+                  >
                     Entre em contato conosco
                     <img
                       src="/images/whatsapp.svg"

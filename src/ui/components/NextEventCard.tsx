@@ -28,7 +28,11 @@ export function NextEventCard() {
             color: "#9ca3af",
           }}
         >
-          <a href="/eventos" className="text-primary bg-secondary font-medium text-base w-full rounded-lg p-3 transition-colors hover:text-primary hover:bg-secondary flex justify-center items-center gap-2">
+          <a
+            href="https://www.instagram.com/excalibur.swordplay/"
+            target="_blank"
+            className="text-primary bg-secondary font-medium text-base w-full rounded-lg p-3 transition-colors hover:text-primary hover:bg-secondary flex justify-center items-center gap-2"
+          >
             Nos siga para mais informações
             <Instagram />
           </a>

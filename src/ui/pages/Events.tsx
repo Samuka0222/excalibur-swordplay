@@ -9,7 +9,7 @@ export default function Events() {
   }, [])
 
   return (
-    <section className="w-full h-full flex flex-col justify-center items-center bg-white mt-[110px] lg:mt-[160px] px-5 py-6">
+    <section className="w-full h-full flex flex-col justify-center items-center bg-white mt-[100px] px-5 py-6">
       <AnimatedContainer
         initial={{ y: 700 }}
         animate={{ y: 0 }}

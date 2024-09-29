@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Link, NavLink, useMatch } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 interface AnimatedLinkProps {
   to: string;
@@ -8,14 +8,12 @@ interface AnimatedLinkProps {
 }
 
 export function AnimatedLink({ to, children, navLink }: AnimatedLinkProps) {
-  const match = useMatch(to);
 
   return (
     <motion.div
       whileHover={{
         scale: 1.1,
         color: "#9ca3af",
-        borderBottom: match?.pathname !== to ? "2px solid" : undefined
       }}
     >
       {
