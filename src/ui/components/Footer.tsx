@@ -3,7 +3,7 @@ import { Instagram } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="w-full h-[130px] bg-primary text-white flex justify-between md:justify-center md:gap-20 items-center px-5">
+    <footer className="w-full h-[90px] bg-primary text-white flex justify-between md:justify-center md:gap-20 items-center px-5">
       <div className="w-fit flex justify-center items-center transition-transform gap-2">
         <img src="/images/logo-excalibur-swordplay-md.png" alt="Logo do Excalibur Swordplay" className="w-16 h-16" />
         <span className="text-lg font-bold text-white">Excalibur</span>

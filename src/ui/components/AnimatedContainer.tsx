@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 interface AnimatedContainerProps {
   children: React.ReactNode;
   className?: string;
+  background?: "dark" | "white";
   initial?: Record<string, number | string | boolean>;
   animate?: Record<string, number | string | boolean>;
   whileInView?: Record<string, number | string | boolean>;
@@ -21,12 +22,13 @@ export function AnimatedContainer({
   return (
     <motion.div
       className={cn(
-        className ?? 'container'
+        className, "relative"
       )}
       initial={initial ?? undefined}
       animate={animate ?? undefined}
       whileInView={whileInView ?? undefined}
       transition={transition ?? undefined}
+      viewport={{ once: true }}
     >
       {children}
     </motion.div>

@@ -66,9 +66,8 @@ export default function About() {
             Eu posso apoiar o evento?
           </h2>
           <p className="text-lg indent-6 text-justify">
-            <span className="text-3xl font-medieval font-medium">S</span>im, como foi dito anteriomente, o <span className="font-medium underline">Excalibur Swordplay</span> é independente, caso você queira apoiar o projeto para que mais eventos possam ocorrer, você pode se tornar um apoiador através do QR Code abaixo e concorrer a sorteios do Swordplay.
+            <span className="text-3xl font-medieval font-medium">S</span>im, como foi dito anteriomente, o <span className="font-medium underline">Excalibur Swordplay</span> é independente, então iremos em breve disponibilizar campanhas para apoio financeiro.
           </p>
-          (Adicionar o QR Code)
         </div>
       </AnimatedContainer>
 

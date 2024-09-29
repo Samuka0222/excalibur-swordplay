@@ -1,6 +1,6 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@ui/components/Card";
 import { motion } from "framer-motion";
-import { MapPin } from "lucide-react";
+import { Instagram, MapPin } from "lucide-react";
 
 export function NextEventCard() {
   return (
@@ -28,13 +28,9 @@ export function NextEventCard() {
             color: "#9ca3af",
           }}
         >
-          <a href="/eventos" className="text-primary bg-secondary font-medium text-base w-full rounded-lg p-3 transition-colors hover:text-primary hover:bg-secondary flex justify-center items-center">
-            Entre no nosso grupo
-            <img
-              src="/images/whatsapp.svg"
-              alt="botão para grupo do whatsapp"
-              className="w-6 h-6 ml-2"
-            />
+          <a href="/eventos" className="text-primary bg-secondary font-medium text-base w-full rounded-lg p-3 transition-colors hover:text-primary hover:bg-secondary flex justify-center items-center gap-2">
+            Nos siga para mais informações
+            <Instagram />
           </a>
         </motion.div>
       </CardFooter>
