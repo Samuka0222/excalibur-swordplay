@@ -279,7 +279,22 @@ export default function Home() {
                   <span className="text-3xl font-medieval font-medium">O</span> próximo evento do <span className="font-bold text-medieval">Excalibur Swordplay</span> contará com o Apoio das seguintes empresas
                 </p>
                 <div className="w-full flex justify-center items-center">
-                  (Colocar patrocinadores)
+                  <motion.div
+                    whileHover={{
+                      scale: 1.05,
+                      color: "#9ca3af",
+                    }}
+                    className="mt-4"
+                  >
+                    <a
+                      href="https://www.instagram.com/maisfacilengenharia/" target="_blank">
+                      <img
+                        src="/images/mais-facil-patrocinador.png"
+                        className="w-[250px] rounded-lg"
+                        alt="Logo da Mais Fácil Engenharia e Construção" />
+                    </a>
+                  </motion.div>
+
                 </div>
                 <p className="text-lg indent-6 text-justify">
                   <span className="text-3xl font-medieval font-medium">A</span>poie o Excalibur Swordplay você também! Oferecemos os seguintes planos:
