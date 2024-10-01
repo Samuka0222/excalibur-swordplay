@@ -1,5 +1,5 @@
 import { Sheet, SheetTrigger, SheetContent, SheetHeader, SheetTitle } from "./Sheet"
-import { Calendar, Home, MenuIcon, BookUser, Scroll } from "lucide-react"
+import { Calendar, Home, MenuIcon, BookUser } from "lucide-react"
 import { Link } from "react-router-dom"
 import { Button } from "./Button"
 import { routes } from "@app/routes/route";
@@ -37,11 +37,6 @@ export function SideMenu() {
           <li className="w-full">
             <SideMenuLinkButton to={routes.home}>
               <Home className="mr-2" /> Início
-            </SideMenuLinkButton>
-          </li>
-          <li className="w-full">
-            <SideMenuLinkButton to={routes.rules}>
-              <Scroll className="mr-2" /> Regras
             </SideMenuLinkButton>
           </li>
           <li className="w-full">
