@@ -2,9 +2,9 @@ name: Excalibur Swordplay CI
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   # pullrequest:
-  #   branches: [main]
+  #   branches: [master]
 
 jobs:
   ci:
