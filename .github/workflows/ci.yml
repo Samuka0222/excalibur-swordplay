@@ -1,0 +1,39 @@
+name: Excalibur Swordplay CI
+
+on:
+  push:
+    branches: [main]
+  # pullrequest:
+  #   branches: [main]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x, 22.x]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'pnpm'
+
+    - run: npm pkg delete scripts.prepare
+
+    - name: Install dependencies
+      run: pnpm install --frozen-lockfile
+
+    - name: Linting
+      run: pnpm ci:lint
+
+    - name: Typechecking
+      run: pnpm typecheck
+
+    - name: Tests
+      run: pnpm ci:test
