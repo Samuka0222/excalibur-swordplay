@@ -1,3 +1,6 @@
 {
-  "*.{ts, tsx}": "pnpm biome format --write"
+  "*.{ts, tsx}": [
+    "pnpm biome format --write",
+    "pnpm biome lint"
+  ]
 }
