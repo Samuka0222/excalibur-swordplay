@@ -4,7 +4,7 @@ import { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { routes } from "@app/routes/route";
 import { HeaderMenu } from "@ui/components/HeaderMenu";
-import { Error } from "@ui/pages/Error";
+import { ErrorPage } from "@ui/pages/ErrorPage";
 
 const Home = lazy(() => import('@ui/pages/Home'));
 const Events = lazy(() => import('@ui/pages/Events'));
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
   {
     path: routes.home,
     element: <HeaderMenu />,
-    errorElement: <Error />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: routes.home,

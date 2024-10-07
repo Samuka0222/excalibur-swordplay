@@ -31,6 +31,7 @@ export function NextEventCard() {
           <a
             href="https://www.instagram.com/excalibur.swordplay/"
             target="_blank"
+            rel="noreferrer"
             className="text-primary bg-secondary font-medium text-base w-full rounded-lg p-3 transition-colors hover:text-primary hover:bg-secondary flex justify-center items-center gap-2"
           >
             Nos siga para mais informações

@@ -287,7 +287,10 @@ export default function Home() {
                     className="mt-4"
                   >
                     <a
-                      href="https://www.instagram.com/maisfacilengenharia/" target="_blank">
+                      href="https://www.instagram.com/maisfacilengenharia/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img
                         src="/images/mais-facil-patrocinador.png"
                         className="w-[250px] rounded-lg"
@@ -302,7 +305,10 @@ export default function Home() {
                     className="mt-4"
                   >
                     <a
-                      href="https://www.instagram.com/sulbox" target="_blank">
+                      href="https://www.instagram.com/sulbox"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img
                         src="/images/sulbox-patrocinador.png"
                         className="w-[250px] rounded-lg"
@@ -330,6 +336,7 @@ export default function Home() {
                   <a
                     href="https://wa.me/+555198660606"
                     target="_blank"
+                    rel="noreferrer"
                     className="text-primary bg-secondary font-medium text-base w-full rounded-lg p-3 transition-colors hover:text-primary hover:bg-secondary flex justify-center items-center"
                   >
                     Entre em contato conosco

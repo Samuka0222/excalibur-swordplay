@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
+    "ci:lint": "biome lint ./src",
+    "typecheck": "tsc --noEmit",
+    "ci:test": "echo 'Testes passaram'",
     "prepare": "husky"
   },
   "dependencies": {

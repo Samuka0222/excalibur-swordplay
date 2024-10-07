@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-export function Error() {
+export function ErrorPage() {
   return (
     <section className="min-w-full min-h-screen px-5 py-6 bg-white flex flex-col justify-center items-center">
       <h1 className="text-4xl font-medium font-medieval">

@@ -29,8 +29,8 @@ export default function Events() {
           </h2>
           <ul className="w-full flex flex-col justify-center items-center gap-4 lg:gap-x-8 lg:flex-row lg:flex-wrap xl:gap-x-32">
             {
-              swordplay2023Photos.map((photo, index) => (
-                <li key={index} className="mt-10">
+              swordplay2023Photos.map((photo) => (
+                <li key={photo.src} className="mt-10">
                   <img
                     loading="lazy"
                     src={photo.src}

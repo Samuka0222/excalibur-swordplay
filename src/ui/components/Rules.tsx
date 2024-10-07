@@ -62,6 +62,7 @@ export function Rules({ duration }: { duration: number }) {
       });
     }, 20);
     return () => clearInterval(progressTimer)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeRule])
 
   const changeActiveRuleAction = (ruleId: number) => {

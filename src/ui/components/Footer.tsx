@@ -14,6 +14,7 @@ export function Footer() {
         <motion.a
           href="https://www.instagram.com/excalibur.swordplay/"
           target="_blank"
+          rel="noreferrer"
           whileHover={{
             scale: 1.1,
             color: "#9ca3af",
