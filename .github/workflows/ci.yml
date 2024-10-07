@@ -22,18 +22,18 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'pnpm'
+        cache: npm
 
     - run: npm pkg delete scripts.prepare
 
     - name: Install dependencies
-      run: pnpm install --frozen-lockfile
+      run: npm install --frozen-lockfile
 
     - name: Linting
-      run: pnpm ci:lint
+      run: npm run ci:lint
 
     - name: Typechecking
-      run: pnpm typecheck
+      run: npm run typecheck
 
     - name: Tests
-      run: pnpm ci:test
+      run: npm run ci:test
