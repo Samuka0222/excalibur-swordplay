@@ -8,6 +8,7 @@ phases:
   pre_build:
     commands:
       - npm pkg delete scripts.prepare
+      - npm install -g pnpm
       - pnpm install --frozen-lockfile
 
   build:
