@@ -278,7 +278,7 @@ export default function Home() {
                 <p className="text-lg indent-6 text-justify">
                   <span className="text-3xl font-medieval font-medium">O</span> próximo evento do <span className="font-bold text-medieval">Excalibur Swordplay</span> contará com o Apoio das seguintes empresas
                 </p>
-                <div className="w-full flex justify-center items-center gap-8">
+                <div className="w-full flex flex-col md:flex-row justify-center items-center gap-8">
                   <motion.div
                     whileHover={{
                       scale: 1.05,
@@ -297,6 +297,7 @@ export default function Home() {
                         alt="Logo da Mais Fácil Engenharia e Construção" />
                     </a>
                   </motion.div>
+
                   <motion.div
                     whileHover={{
                       scale: 1.05,
@@ -313,6 +314,25 @@ export default function Home() {
                         src="/images/sulbox-patrocinador.png"
                         className="w-[250px] rounded-lg"
                         alt="Logo da Mais Fácil Engenharia e Construção" />
+                    </a>
+                  </motion.div>
+
+                  <motion.div
+                    whileHover={{
+                      scale: 1.05,
+                      color: "#9ca3af",
+                    }}
+                    className="mt-4"
+                  >
+                    <a
+                      href="https://www.instagram.com/aspenodontologia/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src="/images/aspen-odontologia-patrocinador.jpg"
+                        className="w-[250px] rounded-lg"
+                        alt="Logo da Aspen Odontologia" />
                     </a>
                   </motion.div>
 
